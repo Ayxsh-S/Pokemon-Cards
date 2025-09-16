@@ -76,7 +76,7 @@ function App() {
         if (score > bestScore) setBestScore(score);
         return new Set();
       } else {
-        setScore(s => s + 0.5);
+        setScore(s => s + 1);
         const updated = new Set(prev);
         updated.add(id);
         return updated
